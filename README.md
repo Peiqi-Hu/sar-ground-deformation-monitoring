@@ -5,7 +5,6 @@ This project demonstrates the use of open-access Sentinel-1 Synthetic Aperture R
 
 This project is intended as an **educational and analytical demonstration**, not as a replacement for proprietary or operational InSAR processing systems.
 
----
 
 ## Motivation
 Earthquakes cause measurable surface displacement that can impact cities, transportation corridors, pipelines, and other critical infrastructure. Interferometric SAR (InSAR) is a widely used remote sensing technique for detecting and quantifying such ground deformation.
@@ -16,7 +15,6 @@ This project was developed to:
 - Practice geospatial visualization and analytical communication
 - Simulate an analyst-style workflow aligned with operational EO analytics roles
 
----
 
 ## Data
 - **Satellite:** Sentinel-1 (C-band SAR)
@@ -28,7 +26,6 @@ This project was developed to:
 
 All data used in this project is publicly available.
 
----
 
 ## Methodology
 
@@ -60,7 +57,6 @@ All data used in this project is publicly available.
 - Highlighted areas of notable ground displacement
 - Summarized findings in analyst-style figures suitable for reporting
 
----
 
 ## Results
 Key outputs include:
@@ -70,7 +66,6 @@ Key outputs include:
 
 The results demonstrate how SAR-based EO data can be used to monitor and communicate ground deformation phenomena following seismic events.
 
----
 
 ## Limitations
 - This project uses simplified, open-source processing techniques
@@ -80,7 +75,6 @@ The results demonstrate how SAR-based EO data can be used to monitor and communi
 
 These limitations are acknowledged to ensure technical transparency.
 
----
 
 ## Tools & Technologies
 - **Programming:** Python
@@ -88,12 +82,10 @@ These limitations are acknowledged to ensure technical transparency.
 - **Data Type:** SAR raster data
 - **Techniques:** Signal processing, interferometry concepts, geospatial visualization
 
----
 
 ## Repository Structure
 
 
----
 
 ## Future Improvements
 - Phase unwrapping and displacement scaling
@@ -102,7 +94,6 @@ These limitations are acknowledged to ensure technical transparency.
 - Time-series analysis using multiple SAR acquisitions
 - Machine learning-based change classification
 
----
 
 ## Disclaimer
 This project is for demonstration and learning purposes only. It does not represent an operational InSAR processing system and should not be used for real-world hazard assessment or decision-making.
