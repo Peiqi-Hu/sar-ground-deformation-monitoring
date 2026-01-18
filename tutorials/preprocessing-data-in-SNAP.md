@@ -49,13 +49,21 @@
 7. **Terrain correction (Geocoding)**: Radar → Geometric → Terrain Correction → Range-Doppler
 
 
-### Troubleshooting
+## Troubleshooting
 1. **Missing unwrap.snaphu.img**
    - In case you haven't isntalled snaphu in your system, go to https://step.esa.int/main/snap-supported-plugins/snaphu/ to download the zip.
    - In your powershell, cd to your previous snaphu Export folder which contains .hdr, .img, and snaphu.conf, and run command:  `C:\snaphu\snaphu-v1.4.2_win64\bin\snaphu.exe myphasefile.diff -f snaphu.conf`.
-   - For `myphsefile.diff`: 
+      - For `myphasefile.diff`: Select the interferogram product you generated before, if you applied phase filtering, then select the one ends with  `**_Filt.dim`.
+      - File - Export - ENVI (you can name it myphasefile for instance)
+      - Open the folder `myphasefile`, you may only find below: (There is no phase.img directly exported. That’s because SNAP stores TOPS interferograms in complex form i + q).
+         - coh_*_hdr / coh_*_img	Coherence data (quality measure)
+         - i_ifg_*_hdr / i_ifg_*_img	In-phase component of interferogram
+         - q_ifg_*_hdr / q_ifg_*_img	Quadrature component of interferogram
+      - 
+<img width="1065" height="860" alt="image" src="https://github.com/user-attachments/assets/49592947-4b37-4b3e-a6ce-4734f282bf9c" />
 
-### Manual steps for S-1 split, and apply orbit 
+
+## Manual steps for S-1 split, and apply orbit 
 **Note: v13 forces you split before orbit, otherwise will get error.**
 1. Select the file, Radar - Sentinel-1 TOPS - S1 TOPS Split
    - Sub-swath: IW2 
