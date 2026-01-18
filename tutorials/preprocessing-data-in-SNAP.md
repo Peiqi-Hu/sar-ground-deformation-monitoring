@@ -52,15 +52,11 @@
 ## Troubleshooting
 1. **Missing unwrap.snaphu.img**
    - In case you haven't isntalled snaphu in your system, go to https://step.esa.int/main/snap-supported-plugins/snaphu/ to download the zip.
-   - In your powershell, cd to your previous snaphu Export folder which contains .hdr, .img, and snaphu.conf, and run command:  `C:\snaphu\snaphu-v1.4.2_win64\bin\snaphu.exe myphasefile.diff -f snaphu.conf`.
-      - For `myphasefile.diff`: Select the interferogram product you generated before, if you applied phase filtering, then select the one ends with  `**_Filt.dim`.
-      - File - Export - ENVI (you can name it myphasefile for instance)
-      - Open the folder `myphasefile`, you may only find below: (There is no phase.img directly exported. That’s because SNAP stores TOPS interferograms in complex form i + q).
-         - coh_*_hdr / coh_*_img	Coherence data (quality measure)
-         - i_ifg_*_hdr / i_ifg_*_img	In-phase component of interferogram
-         - q_ifg_*_hdr / q_ifg_*_img	Quadrature component of interferogram
+   - In your powershell, cd to your previous snaphu Export folder which contains .hdr, .img, and snaphu.conf, and run command:  `C:\snaphu\snaphu-v1.4.2_win64\bin\snaphu.exe -f snaphu.conf Phase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.img 24478`.
+      - For `24478`: can double check using `type phase.hdr | find "samples"` to see samples value
       - 
 <img width="1065" height="860" alt="image" src="https://github.com/user-attachments/assets/49592947-4b37-4b3e-a6ce-4734f282bf9c" />
+<img width="1700" height="442" alt="image" src="https://github.com/user-attachments/assets/90bf684d-1ca4-43db-8d74-b424a0d9bb01" />
 
 
 ## Manual steps for S-1 split, and apply orbit 
