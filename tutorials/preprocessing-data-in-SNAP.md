@@ -34,7 +34,7 @@
 
 6. **Phase unwrapping**: Radar → Interferometric → Unwrapping → SNAPHU Export
 - output file:  specify the target folder, I named it 'snaphu', after running completed, go to the directory，should see file like `UnwPhase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.hdr`
-- check if the folder contains `UnwPhase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.img`, in my case, it is missing. In other words, extra steps will be needed to process it because it means snaphu Export didn't not work properly. Skip to the **Troubleshooting** section below. 
+- check if the folder contains `UnwPhase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.img`, in my case, it is missing as expected since Export will not auto run the SNAPHU unwrap. Skip to the **Manual Generate Unwrapping img** section below. 
 
 <img width="1403" height="479" alt="image" src="https://github.com/user-attachments/assets/5647c102-af44-4a00-8fe6-1ef0478a8ad6" />
 <img width="1026" height="480" alt="image" src="https://github.com/user-attachments/assets/4e4e4107-9778-41e1-ad91-4999664782b9" />
@@ -49,7 +49,7 @@
 7. **Terrain correction (Geocoding)**: Radar → Geometric → Terrain Correction → Range-Doppler
 
 
-## Troubleshooting
+## Manual Generate Unwrapping img 
 1. **Missing unwrap.snaphu.img**
    - In case you haven't isntalled snaphu in your system, go to https://step.esa.int/main/snap-supported-plugins/snaphu/ to download the zip.
    - In your powershell, cd to your previous snaphu Export folder which contains .hdr, .img, and snaphu.conf, and run command:  `C:\snaphu\snaphu-v1.4.2_win64\bin\snaphu.exe -f snaphu.conf Phase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.img 24478`.
