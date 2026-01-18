@@ -29,7 +29,11 @@ All data used in this project is publicly available.
 
 ## Methodology
 
-### 1. Data Acquisition
+### 0. Tutorials
+- Step-by-step guides for InSAR processing with SNAP are located in `/tutorials`.
+- This folder also includes my project notes and key learnings.
+  
+### 1. Data Acquisition 
 - Selected a real earthquake event and corresponding geographic region
 - Downloaded pre-event and post-event Sentinel-1 SAR images
 - Ensured consistent acquisition geometry (orbit direction and track)
@@ -78,7 +82,7 @@ These limitations are acknowledged to ensure technical transparency.
 
 ## Tools & Technologies
 - **Programming:** Python
-- **Libraries:** NumPy, rasterio, matplotlib, scipy
+- **Libraries:** NumPy, rasterio, matplotlib, scipy, snaphu
 - **Data Type:** SAR raster data
 - **Techniques:** Signal processing, interferometry concepts, geospatial visualization
 
