@@ -1,13 +1,17 @@
 # SAR Earthquake Ground Deformation Monitoring
 
 ## Overview
-This project demonstrates the use of open-access Sentinel-1 Synthetic Aperture Radar (SAR) data to analyze **earthquake-induced ground deformation** using simplified interferometric and change detection techniques. The goal is to showcase an end-to-end analytical workflow similar to those used in Earth Observation (EO) and InSAR-based monitoring applications.
+This project explores the use of open-access Sentinel-1 Synthetic Aperture Radar (SAR) data to study earthquake-related ground deformation, with a primary focus on understanding and debugging the InSAR processing workflow. The goal is to demonstrate practical knowledge of Earth Observation (EO) pipelines, tool integration, and real-world computational constraints encountered in InSAR-based monitoring applications.
 
-This project is intended as an **educational and analytical demonstration**, not as a replacement for proprietary or operational InSAR processing systems.
+This project is intended as an **educational and analytical demonstration**.
 
+## Current Status & Challenges
+- Phase unwrapping integration with SNAPHU
+- Large interferogram size affecting performance
+- Improving preprocessing and ROI selection
 
 ## Motivation
-Earthquakes cause measurable surface displacement that can impact cities, transportation corridors, pipelines, and other critical infrastructure. Interferometric SAR (InSAR) is a widely used remote sensing technique for detecting and quantifying such ground deformation.
+Earthquakes cause measurable surface displacement that can impact cities, transportations, pipelines, and other critical infrastructure. Interferometric SAR (InSAR) is a widely used remote sensing technique for detecting and quantifying such ground deformation.
 
 This project was developed to:
 - Gain hands-on experience with SAR-based EO data
@@ -20,7 +24,7 @@ This project was developed to:
 - **Satellite:** Sentinel-1 (C-band SAR)
 - **Source:** Copernicus Open Access Hub / ASF 
 - **Acquisition mode:** Interferometric Wide Swath (IW)
-- **Images:** Two SAR scenes acquired before and after a selected earthquake event
+- **Images:** Two SAR scenes (SLC) acquired before and after a selected earthquake event
 - **Study Area:** Cebu, Philipines - Earthquake happened on Sept.30th, 2025 
 - **Orbit:** Same relative orbit to ensure interferometric compatibility
 
@@ -37,6 +41,7 @@ All data used in this project is publicly available.
 - Selected a real earthquake event and corresponding geographic region
 - Downloaded pre-event and post-event Sentinel-1 SAR images
 - Ensured consistent acquisition geometry (orbit direction and track)
+- see `/tutorials/data-acquisition.md`
 
 ### 2. Preprocessing
 - Cropped SAR scenes to the region of interest
