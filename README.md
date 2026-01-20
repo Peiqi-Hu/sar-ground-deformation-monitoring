@@ -32,6 +32,7 @@ All data used in this project is publicly available.
 
 
 ## Methodology
+Overview: `Data acquisition - Preprocessing/subset - Coregistration - Inteferogram - Multilooking - Goldstein filter - Phase export - Phase unwrap (snaphu) - Phase import - cont `
 
 ### 0. Tutorials
 - Step-by-step guides for InSAR processing with SNAP are located in `/tutorials`.
@@ -44,10 +45,10 @@ All data used in this project is publicly available.
 - see `/tutorials/data-acquisition.md`
 
 ### 2. Preprocessing
-- Cropped SAR scenes to the region of interest
-- Applied basic noise reduction and normalization
-- Converted raw SAR data to amplitude and phase representations
+- Applied splits and orbit 
+- Cropped SAR scenes to the region of interest (subset)
 - Visualized SAR intensity to assess data quality
+- see `/tutorials/preprocess-sar.md`
 
 ### 3. Interferometric Analysis (Simplified)
 - Computed phase differences between pre- and post-event SAR images
