@@ -4,6 +4,8 @@ This document describes the conceptual workflow behind a SAR-based ground deform
 
 The goal is to demonstrate understanding of the pipeline logic, even when some steps are still in progress.
 
+
+
 ## 1. SAR Data Acquisition
 * Input data: **Sentinel-1 Single Look Complex (SLC)** 
 * SLC data preserves both **amplitude and phase** information comparing to GRD data type. 

@@ -8,7 +8,7 @@ Preprocessing prepares raw Sentinel-1 SLC data for interferometric analysis by r
 ## Reduce Image Size
 We will do this using:
 - Subset (crop area)
-- Multilooking
+- Multilooking (done after interferogram)
 - Optional coherence mask？
 
 ## Output

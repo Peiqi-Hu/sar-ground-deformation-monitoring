@@ -52,5 +52,10 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
 
     ![subset_file](subset_filepng)
 
+### Check the subset size 
+    - Right click on the intensity under the band -> properties
+    - `7791 x 4652` which is much smaller than the `24479 x 13491` before.
+    ![subset_band_size](subset_band_size.png)
+
 
 ## 5. Multilooking (reduce resolution) - need to do after interferogram generation, cannot apply to single SLC image. 
