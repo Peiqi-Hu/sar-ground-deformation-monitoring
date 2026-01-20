@@ -3,8 +3,13 @@ Preprocessing prepares raw Sentinel-1 SLC data for interferometric analysis by r
 
 ## Input
 - Raw Sentinel-1 SLC products (IW mode)
-- Precise orbit files (POEORB or RESORB)
 - Area of interest (AOI) definition
+
+## Reduce Image Size
+We will do this using:
+- Subset (crop area)
+- Multilooking
+- Optional coherence mask？
 
 ## Output
 - Orbit-corrected SLC data
