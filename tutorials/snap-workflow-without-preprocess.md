@@ -2,7 +2,9 @@
 ### Software: SNAP v13
 **Note: Be aware of the version of the SNAP you are using. V13 provides new functions that can help saving some manual work, like split, apply orbit etc.**
 
-## Steps (SLC → Coregistration → Interferogram → Filtering → Unwrapping → Geocoding → Displacement) 
+## Steps (SLC  → Coregistration → Interferogram → Filtering → Unwrapping → Geocoding → Displacement) 
+**Note：** Below are for without preprocess, if you've already done preprocess (with TOPS split and applied orbit), and you follow coregistration step below will get you error 'source product should be multi sub swath slc burst products'. 
+
 1. Open manifest.safe
 2. **Coregistration**: Radar → Coregistration → S1 TOPS Coregistration → S1 TOPS Coregistration
    - Read: YOUR PRE- SLC FILE

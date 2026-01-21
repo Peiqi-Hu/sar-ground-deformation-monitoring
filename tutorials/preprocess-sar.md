@@ -10,7 +10,9 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
 - `Radar → Apply Orbit File`
 - output: `*_split_Orb.dim`
 
-## 4. Subset (Biggest size reduction)
+## 4. Deburst!!!!!!
+
+## 5. Subset (Biggest size reduction)
 - `Raster → Subset`
 - In my case, the scene end X: 24477， scene end Y: 13490 which tells the size of the image (Width ~= 24,478 pixels, Height ~= 13,491 pixels）that is too big and will take really long to further processing later on. 
 
@@ -59,4 +61,4 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
     ![subset_band_size](images/subset_band_size.png)
 
 
-## 5. Multilooking (reduce resolution) - need to do after interferogram generation, cannot apply to single SLC image. 
+## 6. Multilooking (reduce resolution) - need to do after interferogram generation, cannot apply to single SLC image. 
