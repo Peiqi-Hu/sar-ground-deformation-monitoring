@@ -11,6 +11,7 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
 - output: `*_split_Orb.dim`
 
 ## 4. Deburst!!!!!!
+- Remind not to skip this step...it is needed for topographic phase removal in the later step.
 
 ## 5. Subset (Biggest size reduction)
 - `Raster → Subset`
