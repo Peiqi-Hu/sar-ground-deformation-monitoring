@@ -12,6 +12,8 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
 
 ## 4. Deburst!!!!!!
 - Remind not to skip this step...it is needed for topographic phase removal in the later step.
+- `Radar → Sentinel-1 TOPS → Deburst`
+- output file:  `*_split_Orb_Deb.dim`
 
 ## 5. Subset (Biggest size reduction)
 - `Raster → Subset`
@@ -51,7 +53,7 @@ Now you have downloaded zip file ready. Unzip them, and open the `manifest.safe`
     ![find_x_y_matched_lat_lon](images/find_x_y_matched_lat_lon.png)
 
 
-- Output: `subset_*_split.Orb.dim` (by export as **BEAM-DIMAP**)
+- Output: `subset_*_split.Orb.deb.dim` (by export as **BEAM-DIMAP**)
 
     ![subset_file](images/subset_file.png)
 
