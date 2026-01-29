@@ -6,9 +6,11 @@ This project explores the use of open-access Sentinel-1 Synthetic Aperture Radar
 This project is intended as an **educational and analytical demonstration**.
 
 ## Current Status & Challenges
-- Phase unwrapping integration with SNAPHU
-- Large interferogram size affecting performance
-- Improving preprocessing and ROI selection
+- Phase unwrapping integration with SNAPHU (DONE)
+- Large interferogram size affecting performance (DONE)
+- Improving preprocessing and ROI selection (DONE)
+- SNAPHU import file selection (DONE)
+- QGIS (In-progress)
 
 ## Motivation
 Earthquakes cause measurable surface displacement that can impact cities, transportations, pipelines, and other critical infrastructure. Interferometric SAR (InSAR) is a widely used remote sensing technique for detecting and quantifying such ground deformation.
