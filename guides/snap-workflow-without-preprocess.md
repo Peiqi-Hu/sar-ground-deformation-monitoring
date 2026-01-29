@@ -2,7 +2,7 @@
 ### Software: SNAP v13
 **Note: Be aware of the version of the SNAP you are using. V13 provides new functions that can help saving some manual work, like split, apply orbit etc.**
 
-* It is highly recommended to follow `tutorials\snap-workflow-with-preprocess-done.md` instead of this, although most of the processes are the same. Subset can help a lot in terms of reducing image size to avoid long unwrapping processing time in the later stage. 
+* It is highly recommended to follow `guides\snap-workflow-with-preprocess-done.md` instead of this, although most of the processes are the same. Subset can help a lot in terms of reducing image size to avoid long unwrapping processing time in the later stage. 
 
 ## Steps (SLC  → Coregistration → Interferogram → Filtering → Unwrapping → Geocoding → Displacement) 
 **Note Again：** Below are for without preprocess, if you've already done preprocess (with TOPS split and applied orbit), and you follow coregistration step below will get you error 'source product should be multi sub swath slc burst products'. 

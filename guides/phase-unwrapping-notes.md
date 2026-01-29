@@ -1,0 +1,3 @@
+
+## Large img file take too long to processing unwrap
+After analyzing the workflow, realized the bottleneck was processing the full img file. The solution was to return to the very beginning, select a subset/ROI of interest, and then perform unwrapping which dramatically reducing processing time while keeping results focused on the target area. See `guides\preprocess-sar.md` for the process regarding how to make subsets. 

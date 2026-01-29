@@ -2,7 +2,7 @@
 
 ## Steps (SLC → Subset → Coregistration → Interferogram → TPR  → Multilooking  → GP Filtering → Unwrapping Process (snaphu) →  Displacement → Geocoding) 
 
-### 1. Previous step: `tutorials\preprocess-sar.md`
+### 1. Previous step: `guides\preprocess-sar.md`
 - output files: `subset_0_*_split.Orb.deb.dim` and `subset_1_*_split.Orb.deb.dim` 
 
 ### 2. **Coregistration - Back Geocoding**: Radar → Coregistration → S1 TOPS Coregistration → S-1 Back Geocoding
@@ -19,7 +19,7 @@
 
 ### 4. **Topographic phase removel**: Radar → Interferometric → Products → Topographic Phase Removal
 - This isolates surface deformation + atmosphere + noise. 
-- If you got error saying need deburst file, unfortunetly need to go back to `tutorials\preprocess-sar.md`, starting from Step 4 to do the deburst first.
+- If you got error saying need deburst file, unfortunetly need to go back to `guides\preprocess-sar.md`, starting from Step 4 to do the deburst first.
 - output file:  `*split_Orb_deb_Stack_Ifg_dinsar.dim`
 
 ### 5. **Multilooking**: Radar → SAR Utilities → Multilooking

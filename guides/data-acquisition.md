@@ -10,7 +10,7 @@ Option 2 - Copernicus Data Space https://dataspace.copernicus.eu/
 ![ASF_filter](images/ASF_filter.png)
 
 - Filling the filter with below：
-  - For AOI: can generate a GeoJson file in notepad, and then import to the filter. See `tutorials/cebu_aoi.geojson`. 
+  - For AOI: can generate a GeoJson file in notepad, and then import to the filter. See `guides/cebu_aoi.geojson`. 
    - Basically, it is taking ~50km X 50km around the epicenter 11.15° N, 124.14° E which are below: 
      - Lat: 11.0° N to 11.5° N
      - Lon: 123.9° E to 124.4° E
