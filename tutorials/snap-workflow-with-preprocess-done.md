@@ -1,6 +1,6 @@
 # SNAP workflow with preprocessed SLC 
 
-## Steps (SLC  → Coregistration → Interferogram → Filtering → Unwrapping → Geocoding → Displacement) 
+## Steps (SLC → Subset → Coregistration → Interferogram → TPR  → Multilooking  → GP Filtering → Unwrapping Process (snaphu) →  Displacement → Geocoding) 
 
 ### 1. Previous step: `tutorials\preprocess-sar.md`
     - output files: `subset_0_*_split.Orb.deb.dim` and `subset_1_*_split.Orb.deb.dim` 
@@ -88,5 +88,12 @@ Abort `:
     - Digital Elevation Model: SRTM 1Sec HGT
     - Pixel spacing: 20–30 m
     - Map projection: WGS84 / UTM (Cebu → UTM Zone 51N)
+    - Output: `*split_Orb_deb_Stack_Ifg_dinsar_ML_flt_imp_dsp_TC.dim`
 
     ![terrain_correction](images/terrain_correction.png)
+
+### 13. Export 
+    - Export the final file as GeoTiff format ! Nice job! 
+
+
+*YEAH! Finally we're here! Let's move to QGIS!* 

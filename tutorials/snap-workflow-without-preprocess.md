@@ -2,8 +2,11 @@
 ### Software: SNAP v13
 **Note: Be aware of the version of the SNAP you are using. V13 provides new functions that can help saving some manual work, like split, apply orbit etc.**
 
+* It is highly recommended to follow `tutorials\snap-workflow-with-preprocess-done.md` instead of this, although most of the processes are the same. Subset can help a lot in terms of reducing image size to avoid long unwrapping processing time in the later stage. 
+
 ## Steps (SLC  → Coregistration → Interferogram → Filtering → Unwrapping → Geocoding → Displacement) 
-**Note：** Below are for without preprocess, if you've already done preprocess (with TOPS split and applied orbit), and you follow coregistration step below will get you error 'source product should be multi sub swath slc burst products'. 
+**Note Again：** Below are for without preprocess, if you've already done preprocess (with TOPS split and applied orbit), and you follow coregistration step below will get you error 'source product should be multi sub swath slc burst products'. 
+
 
 1. Open manifest.safe
 2. **Coregistration**: Radar → Coregistration → S1 TOPS Coregistration → S1 TOPS Coregistration
@@ -48,17 +51,22 @@
 <img width="1399" height="458" alt="image" src="https://github.com/user-attachments/assets/b02d7324-189f-418b-8330-12b274577b86" />
 
 
-7. **Terrain correction (Geocoding)**: Radar → Geometric → Terrain Correction → Range-Doppler
+7. **Phase to Displacement**: Radar → Interferometric → Products → Phase to Displacement
 
+8. **Terrain correction (Geocoding)**: Radar → Geometric → Terrain Correction → Range-Doppler
+
+9. Export 
+    - Export the final file as GeoTiff format ! 
 
 ## Manual Generate Unwrapping img 
 1. **Missing unwrap.snaphu.img**
    - In case you haven't isntalled snaphu in your system, go to https://step.esa.int/main/snap-supported-plugins/snaphu/ to download the zip.
    - In your powershell, cd to your previous snaphu Export folder which contains .hdr, .img, and snaphu.conf, and run command:  `C:\snaphu\snaphu-v1.4.2_win64\bin\snaphu.exe -f snaphu.conf Phase_ifg_IW2_VV_24Sep2025_06Oct2025.snaphu.img 24478`.
       - For `24478`: can double check using `type phase.hdr | find "samples"` to see samples value
-      - 
+
 <img width="1065" height="860" alt="image" src="https://github.com/user-attachments/assets/49592947-4b37-4b3e-a6ce-4734f282bf9c" />
 <img width="1700" height="442" alt="image" src="https://github.com/user-attachments/assets/90bf684d-1ca4-43db-8d74-b424a0d9bb01" />
+
 
 
 ## Manual steps for S-1 split, and apply orbit 
