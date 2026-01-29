@@ -57,7 +57,7 @@
     - Go back to snaphu.conf, under Input Files command out the `CORRFILE .snaphu.img`.
 - run cmd below in powershell: `snaphu.exe -f snaphu.conf Phase_ifg_VV_24Sep2025_06Oct2025.snaphu.img 1954`. If success, should see below:
 
-        ![success_unwrap_snaphu](images/success_unwrap_snaphu.png)
+    ![success_unwrap_snaphu](images/success_unwrap_snaphu.png)
 
 ### 9. **SNAPHU Import**: Radar → Interferometric → Unwrapping → Snaphu Import
 - Select your previous `*split_Orb_deb_Stack_Ifg_dinsar_ML_flt.dim` before Step 7 Snaphu Export as `1-Read-Phase`.
