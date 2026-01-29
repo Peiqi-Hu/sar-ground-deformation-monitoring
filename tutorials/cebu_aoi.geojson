@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cebu_Earthquake_AOI"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [123.90, 11.00],
+            [124.40, 11.00],
+            [124.40, 11.50],
+            [123.90, 11.50],
+            [123.90, 11.00]
+          ]
+        ]
+      }
+    }
+  ]
+}
